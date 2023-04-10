@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Page</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<!-- students must convert divs to semantic tags -->
+
+<body>
+    <div id="container">
+
+        <div id="header-con">
+            <div id="main-header" class="grid-con">
+                <div id="header-box1" class="box-color">
+                    <p><a href="#">The Burrito Bar</a></p>
+                </div>
+                <div id="main-nav" class="box-color">
+                    <nav>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Order Online</a></li>
+
+                    </nav>
+                </div>
+                <div id="header-box2" class="box-color">
+                    <p><a href="#">Catering</a></p>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="grid-con" id="hero">
+                <div id="hero-text" class="box-color">
+                    <h1>Welcome to 'The Burrito Bar'</h1>
+                    <p>
+                        Our menu is filled with classic dishes that are made from the freshest ingredients and
+                        prepared with traditional cooking techniques. From sizzling fajitas and zesty tacos to hearty
+                        burritos and flavorful enchiladas, we have something to satisfy every craving.
+                    </p>
+                    <br>
+                    <p>
+                        Don't forget to pair your meal with one of our signature margaritas or
+                        a refreshing cerveza from our extensive drink menu. And for those with a
+                        sweet tooth, our dessert menu offers a range of decadent options, including our famous churros.
+                    </p>
+                    <input type="button" value="Read Story" class="button">
+                </div>
+                <img src="./images/hero-img.jpg" alt="image" id="hero-image">
+            </div>
+
+            <div class="grid-con" id="products">
+                <h2>Make your choice</h2>
+                <div class="product-box" id="product1">
+                    <img src="./images/product1.jpg" alt="image">
+                    <h3>Supreame Fries</h3>
+                    <p>a delectable combination of crispy fries, tangy cheese, savory bacon, and fresh green onions.</p>
+                    <input type="button" value="Add to Cart" id="button">
+                </div>
+                <div class="product-box" id="product2">
+                    <img src="./images/product2.jpg" alt="image">
+                    <h3>Pan Fried Meats</h3>
+                    <p>Enjoy the simplicity and flavor of pan-fried dishes, from classic breakfast potatoes to seared
+                        steak with caramelized onions</p>
+                    <input type="button" value="Add to Cart" id="button">
+                </div>
+                <div class="product-box" id="product3">
+                    <img src="./images/product3.jpg" alt="image">
+                    <h3>Quesadilla</h3>
+                    <p>a mouthwatering Mexican dish made with melted cheese and savory fillings sandwiched between two
+                        crispy tortillas.</p>
+                    <input type="button" value="Add to Cart" id="button">
+                </div>
+                <p><a href="gallery.html">See All Options>></a></p>
+            </div>
+
+
+            <div id="about-con">
+
+                <div class="grid-con" id="about">
+                    <div id="about-text" class="box-color">
+                        <h2 id="about-title">Taste of Mexico</h2>
+                        <p>he taste of Mexico is a vibrant and complex fusion of flavors, textures, and spices that
+                            reflect the country's rich
+                            culinary history and diverse cultural influences. From the tangy citrus notes of lime and
+                            orange to the smoky heat
+                            of chipotle and chili peppers, Mexican cuisine offers a bold and exciting palette of tastes
+                            that are sure to tantalize the senses.
+                        </p>
+                        <br>
+                        <p> One of the most iconic flavors in Mexican cuisine is the smoky, earthy taste of mole sauce,
+                            a complex blend of chili peppers,
+                            chocolate, nuts, and spices that is often served over chicken or pork. Other popular Mexican
+                            dishes include tacos, burritos,
+                            enchiladas, and tamales, which can be filled with a variety of meats, cheeses, and
+                            vegetables. Whether you're savoring a spicy
+                            salsa or indulging a rich and creamy flan, the taste of Mexico is sure to leave a lasting
+                            impression on your taste buds.
+                        </p>
+                        <br>
+                        <input type="button" value="Combos & Toppings" class="button">
+                    </div>
+                    <img src="./images/4-images.jpg" alt="image" id="about-image">
+                </div>
+            </div>
+
+            <div class="grid-con" id="contact">
+                <div id="contact-text" class="box-color">
+                    <h2> Help us Improve!</h2>
+                    <br>
+                    <p>
+                        We value your opinion! At "The Burrito Bar", we strive to provide the best possible experience
+                        for our
+                        customers. Your feedback is an important part of that process, as it helps us understand what
+                        we're doing
+                        well and where we can improve. Whether you had a fantastic meal with us or encountered some
+                        issues during your visit,
+                        we want to hear about it. Your feedback helps us make changes and adjustments that can enhance
+                        the experience for all of our customers.
+                    </p>
+                    <br>
+                    <p>
+                        To show our appreciation for your feedback, we're offering a special discount on your next meal
+                        with us. Simply fill out the form
+                        below and let us know how we're doing. We value your time and opinions, and we're committed to
+                        using them to make "The Burrito Bar"
+                        the best it can be. Thank you for your support!"
+                    </p>
+                </div>
+                <div id="contact-form" class="box-color">
+                    <form action="submit-feedback.php" method="post">
+                        <div class="fName">
+                            <input type="text" id="fName" placeholder="First Name" name="first-name" required> <br>
+                        </div>
+                        <div class="LName">
+                            <input type="text" id="" placeholder="Last Name" name="last-name" required><br>
+                        </div>
+                        <div class="Email">
+
+                            <input type="email" id="" placeholder="Email" name="email" required><br>
+                        </div>
+                        <div class="feedBack">
+                            <textarea id="tarea" placeholder="FeedBack" name="feedback" rows="5"
+                                required></textarea><br>
+                            <input type="button" value="Submit" id="form-button">
+                        </div>
+                    </form>
+                </div><var></var>
+            </div>
+        </main>
+
+        <div id="footer-con">
+            <div class="grid-con" id="footer">
+                <!-- <div id="footer-logo" class="box-color">
+                </div> -->
+                <div id="footer-nav" class="box-color">
+                    <h1 class="hass">The Burrito Bar</h1>
+                </div>
+                <div id="footer-newsletter1" class="box-color">
+                    <h1 class="yupp">130,sundas street ,Lawda, UP</h1>
+                </div>
+                <div id="footer-newsletter2" class="box-color">
+                    <img src="/images/uber.png" alt="instagram" class="instalog3">
+                </div>
+                <div id="footer-social" class="box-color123">
+                    <img src="/images/instagram.png" alt="instagram" class="instalogo">
+                    <img src="/images/twitter.png" alt="twitter" class="instalogo">
+                    <img src="/images/facebook.png" alt="facebook" class="instalogo">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
